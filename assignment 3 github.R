@@ -1,0 +1,9 @@
+names=c("Jeb","Donald","Ted","Marco","Carly","Hillary","Bernie")
+ABC_Political=c(4,62,51,21,2,14,15)
+CBS_Political=c(12,75,43,19,1,21,19)
+results=cbind(names,ABC_Political,CBS_Political)
+results.df=data.frame(names,ABC_Political,CBS_Political)
+r=rowMeans(results.df[,2:3])
+results.df=data.frame(names,r)
+mean(as.matrix(results.df[,2,3]))
+results.df
