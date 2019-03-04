@@ -1,0 +1,7 @@
+library(matlib)
+A <- matrix(1:100, nrow=10)
+determinant.matrix(A)
+solve(A)
+B <- matrix(1:1000, nrow=10)
+determinant.matrix(B)
+solve(B)
